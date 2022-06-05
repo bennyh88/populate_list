@@ -1,0 +1,38 @@
+<head>
+    <script src=script.js></script>
+</head>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="object_a.js"></script>
+    <script src="object_b.js"></script>
+    <script src="script.js"></script>
+    <title>rtu_template</title>
+</head>
+<body>
+    <h2>FORM</h2>
+    <form>
+        <label for="voltage">Choose a Voltage:</label>
+        <select name="voltage" id="voltage" onchange="update_form(this)">
+            <option value="choose">choose</option>
+            <option value="EHV">EHV</option>
+            <option value="HV">HV</option>
+        </select>
+        <br>
+        <label for="sub">Choose a Substation Type:</label>
+        <select name="sub" id="sub" onchange="update_form(this)">
+            <option value="choose">choose</option>
+            <option value="Primary">Primary</option>
+            <option value="Secondary">Secondary</option>
+        </select>
+        <br>
+        <label for="rtu">Choose a RTU Model:</label>
+        <select name="rtu" id="rtu" onchange="update_form(this)">
+            <option value="choose">choose</option>
+            <option value="Gemini 3">Gemini 3</option>
+            <option value="Talus">Talus</option>
+        </select>
+
+     
+    </form>
+    <div id="extensions_div">EXTENSIONS</div>
+</body>
